@@ -5,7 +5,7 @@ export const uploadImage = async (file: File): Promise<{ url: string, public_id:
     formData.append('folder', 'menus');
 
     try {
-        const res = await fetch(`https://api.cloudinary.com/v1_1/${process.env.NEXT_PUBLIC_CLOUDINARY_CLOUD_NAME}/image/upload`, {
+        const res = await fetch(`https://api.cloudinary.com/v1_1/${process.env.CLOUDINARY_CLOUD_NAME}/image/upload`, {
             method: 'POST',
             body: formData,
         });

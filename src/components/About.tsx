@@ -10,7 +10,7 @@ export default async function About () {
                     {aboutItems[0].categoryName &&
                       <h2 className="text-3xl sm:text-4xl font-bold text-center sm:text-left">
                           {aboutItems[0].categoryName}{" "}
-                        <span className="bg-[#485887] text-background px-1 rounded">Бекон</span>
+                        <span className="bg-[#485887] text-[#f7f7f7] px-1 rounded">Бекон</span>
                       </h2>
                     }
                     {aboutItems.map((item) => (

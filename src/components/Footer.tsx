@@ -11,11 +11,11 @@ export const Footer = () => {
                     <h1 className="bg-[#f7f7f7] text-3xl font-bold text-[#485887] px-1 rounded">Бекон</h1>
                     <p className="text-[#f7f7f7]">гастропаб</p>
                 </Link>
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-5 justify-items-center">
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-5 justify-items-center sm:place-items-center">
                     <a className="w-full justify-items-center sm:justify-items-end self-center" href="https://www.instagram.com/pub_bacon/" target="_blank">
                         <IconInstagram/>
                     </a>
-                    <a className="w-full justify-items-center sm:justify-items-start self-center" href="https://www.facebook.com/p/БЕКОН-Паб-біля-дому-100076000542335" target="_blank">
+                    <a className="w-full justify-items-center self-center sm:justify-items-start sm:place-items-center" href="https://www.facebook.com/p/БЕКОН-Паб-біля-дому-100076000542335" target="_blank">
                         <IconFacebook/>
                     </a>
                 </div>

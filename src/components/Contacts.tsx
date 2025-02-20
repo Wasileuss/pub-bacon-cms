@@ -13,7 +13,7 @@ export const Contacts = () => {
             <div className="flex flex-col items-center py-10">
                 <h2 className="text-3xl sm:text-4xl font-bold text-center sm:text-left">
                     Заходьте, пишіть, телефонуйте в{" "}
-                    <span className="bg-[#485887] text-background px-1 rounded">Бекон</span>
+                    <span className="bg-[#485887] text-[#f7f7f7] px-1 rounded">Бекон</span>
                 </h2>
             </div>
             <div className="grid place-items-center grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">

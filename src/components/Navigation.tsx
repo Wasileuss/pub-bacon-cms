@@ -32,9 +32,6 @@ export default function Navigation({}: ScrollLinkProps) {
                 <li>
                     <Link href="/menu" className={pathname === "/menu" ? "text-[#00f2b5]" : ""}>Меню</Link>
                 </li>
-                <li>
-                    <Link href="/contacts" className={pathname === "/contacts" ? "text-[#00f2b5]" : ""}>Контакти</Link>
-                </li>
                 {user && (
                     <li>
                         <Link href="/admin" className={pathname === "/admin" ? "text-[#00f2b5]" : ""}>Адмін</Link>

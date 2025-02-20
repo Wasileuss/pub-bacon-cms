@@ -30,7 +30,7 @@ function MenuCategory({ categoryName, items }: { categoryName: string; items: It
                             </div>
                         </div>
                         <div className="flex flex-col items-end min-w-28">
-                            <p className="text-2xl font-semibold">{item.price} грн</p>
+                            {item.price && <p className="text-2xl font-semibold">{item.price} грн</p>}
                             <p className="text-xl">{item.weight}</p>
                         </div>
                     </div>

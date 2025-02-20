@@ -22,7 +22,7 @@ export default async function Menu() {
             <h2 className="text-3xl font-bold mb-5 sm:text-4xl">
                 Меню <span className="bg-[#485887] text-background px-1 rounded">Bacon</span> Pub
             </h2>
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
+            <div className="w-full grid grid-cols-1 lg:grid-cols-2 gap-4">
                 {categories.map((category, index) => (
                     <MenuCategory
                         key={index}

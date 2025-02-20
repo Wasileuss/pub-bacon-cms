@@ -13,7 +13,7 @@ export default async function About () {
                         <span className="bg-[#485887] text-[#f7f7f7] px-1 rounded">Бекон</span>
                       </h2>
                     }
-                    {aboutItems.map((item) => (
+                    {aboutItems.sort((a, b) => parseInt(a.num) - parseInt(b.num)).map((item) => (
                         <div key={item.id} className="flex flex-col items-center gap-8 w-full sm:flex-row">
                             {item.imgUrl && (
                                 <div className="flex min-w-full sm:min-w-60 h-auto basis-1/2 grow">

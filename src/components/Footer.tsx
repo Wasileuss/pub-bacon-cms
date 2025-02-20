@@ -28,8 +28,8 @@ export const Footer = () => {
                     Розробка сайтів{' '}
                     <a
                         className="italic transition duration-300 hover:text-[#00a97f]"
-                        href={process.env.NEXT_PUBLIC_INSTAGRAM} target="_blank" rel="noreferrer noopener">
-                        {process.env.NEXT_PUBLIC_AUTHOR}
+                        href="https://www.instagram.com/webuimaster/" target="_blank" rel="noreferrer noopener">
+                        WebUIMaster
                     </a>
                 </h2>
                 <p>Усі права захищені &copy; {new Date().getFullYear()}</p>

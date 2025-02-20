@@ -31,7 +31,7 @@ export default function LoginPage() {
             const userCredential = await signInWithEmailAndPassword(auth, email, password);
             const token = await userCredential.user.getIdToken();
             Cookies.set("firebaseToken", token, { expires: 1 });
-            router.replace("/admin"); // Замінюємо push на replace
+            router.replace("/admin");
         } catch {
             setError("Неправильний email або пароль");
         }

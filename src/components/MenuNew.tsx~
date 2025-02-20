@@ -1,0 +1,58 @@
+import React from "react";
+import { notFound } from "next/navigation";
+import Image from "next/image";
+import Link from "next/link";
+import { Item } from "@/server/getData.server";
+
+interface BaconDataProps {
+    category?: string;
+    items: Item[];
+}
+
+const Menu: React.FC<BaconDataProps> = ({ category, items }) => {
+    const resolvedCategory = category ?? "menus";
+
+    if (!resolvedCategory) return notFound();
+
+    return (
+        <div>
+            <h1 className="text-3xl font-bold text-center mb-6">
+                {resolvedCategory.charAt(0).toUpperCase() + resolvedCategory.slice(1)}
+            </h1>
+            {items.length === 0 ? (
+                <p>No items found.</p>
+            ) : (
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                    {items.map((item) => (
+                        <div key={item.id} className="border p-4 rounded-md">
+                            <Link href={item.linkVal} target="_blank" className="text-blue-500 font-semibold">
+                                {item.titleVal}
+                            </Link>
+                            <p>{item.descVal}</p>
+                            <div className="w-full h-auto object-cover rounded-lg mb-4">
+                                {item.imgUrl && (
+                                    <Image
+                                        width={300}
+                                        height={200}
+                                        style={{ width: "auto", height: "auto" }}
+                                        priority={true}
+                                        loading={"eager"}
+                                        src={item.imgUrl}
+                                        alt="img"
+                                    />
+                                )}
+                            </div>
+                            <p className="text-sm text-gray-500">
+                                {item.timestamp
+                                    ? new Date(item.timestamp.seconds * 1000).toLocaleString()
+                                    : "N/A"}
+                            </p>
+                        </div>
+                    ))}
+                </div>
+            )}
+        </div>
+    );
+};
+
+export default Menu;

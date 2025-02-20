@@ -19,3 +19,11 @@ body {
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+.splide__pagination.splide__pagination--ltr {
+  @apply -bottom-7 flex justify-center gap-2.5;
+}
+
+.splide__pagination .splide__pagination__page {
+  @apply w-[12px] h-[12px];
+}

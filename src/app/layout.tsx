@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   description: "Паб Бекон | Варимо власне пиво. Паб із найсмачнішою їжею на районі. Львів, вулиця Наукова, 30",
   icons: "/favicon.ico",
     other: {
-        "google-site-verification": "LYpGEUF8rImGMGNbue1NxMA9CDX2RG3LEqUD7WhiOHs",
+        "google-site-verification": "5zV-wJmrqVnCLey2pWfi1Tq-Gzbwvp4zeNNHC4RxWe8",
     },
 };
 

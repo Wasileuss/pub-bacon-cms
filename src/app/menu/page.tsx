@@ -1,14 +1,14 @@
+import type { Metadata } from "next";
 import { getItems } from "@/server/getData.server";
 import MenuCategory from "@/components/MenuCategory";
-import type {Metadata} from "next";
+
+export const dynamic = "force-dynamic";
 
 export const metadata: Metadata = {
     title: "Паб Бекон | Меню",
     description: "Паб Бекон - справжній рай для гурманів та любителів якісного пива. Меню гастропабу вражає різноманітністю та якістю страв.",
     icons: "/favicon.ico",
 };
-
-export const dynamic = "force-dynamic";
 
 export default async function Menu() {
 

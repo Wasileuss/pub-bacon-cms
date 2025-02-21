@@ -243,7 +243,7 @@ const AddItems: React.FC = () => {
         <div className="w-full max-w-[1440px] mx-auto flex flex-col py-10 px-2.5">
             <h1 className="text-3xl sm:text-4xl font-bold self-center sm:text-left mb-10">
                 Welcome to{" "}
-                <span className="bg-[#485887] text-background px-1 rounded">Bacon</span>
+                <span className="bg-[#485887] text-[#f7f7f7] px-1 rounded">Bacon</span>
                 {" "}Admin Panel
             </h1>
             <div className="flex flex-col gap-2.5">

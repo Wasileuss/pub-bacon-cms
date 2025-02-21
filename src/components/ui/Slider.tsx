@@ -27,15 +27,14 @@ const Slider: React.FC<SplideSliderProps> = ({ slides, options, imgStyle }) => {
             {slides.map((slide) => {
                 const parsedStyles = safeParseJSON(slide.info3 || null);
                 return (
-                    <SplideSlide key={slide.id} className="relative">
+                    <SplideSlide key={slide.id} className="relative overflow-hidden h-auto">
                         <Image
                             src={slide.imgUrl}
                             alt={slide.title || "Slide"}
                             width={400}
                             height={300}
-                            style={{ ...slide.imgStyle, ...imgStyle, position: "relative" }}
-                            priority={false}
-                            loading={"lazy"}
+                            style={{ ...slide.imgStyle, ...imgStyle, position: "relative", height: "100%", width: "100%" }}
+                            priority={true}
                         />
                         {slide.desc && (
                             <div

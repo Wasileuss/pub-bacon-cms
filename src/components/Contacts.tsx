@@ -16,29 +16,41 @@ export const Contacts = () => {
                     <span className="bg-[#485887] text-[#f7f7f7] px-1 rounded">Бекон</span>
                 </h2>
             </div>
-            <div className="grid place-items-center grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
-                <div className="w-full grid place-items-center py-4 sm:border-r-2 border-[#485887]">
-                    <a className="flex items-center gap-2.5" href={googleMapsUrl} target="_blank">
-                        <IconMap/>
+            <div className="text-xl font-semibold grid place-items-center gap-2.5 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
+                <a
+                    className="w-full grid place-items-center py-4 border-2 border-[#485887] rounded-xl"
+                    href={googleMapsUrl}
+                    target="_blank"
+                >
+                    <div className="flex items-center gap-2.5">
+                        <div>
+                            <IconMap />
+                        </div>
                         <p>Бекон на мапі</p>
-                    </a>
-                </div>
-                <div className="w-full grid place-items-center py-4 border-t-2 border-[#485887] sm:border-t-0 lg:border-r-2 ">
-                    <a className="flex items-center gap-2.5" href="mailto:francis.bacon.pub@gmail.com">
+                    </div>
+                </a>
+                <a
+                    className="w-full grid place-items-center py-4 border-2 border-[#485887] rounded-xl"
+                    href="mailto:francis.bacon.pub@gmail.com"
+                >
+                    <div className="flex items-center gap-2.5">
                         <div>
                             <IconEmail />
                         </div>
                         <p>francis.bacon.pub@gmail.com</p>
-                    </a>
-                </div>
-                <div className="w-full grid place-items-center py-4 border-t-2 border-[#485887] lg:border-0 col-span-1 sm:col-span-2 lg:col-span-1">
-                    <a className="flex items-center gap-2.5" href="tel:380631903689">
+                    </div>
+                </a>
+                <a
+                    className="w-full grid place-items-center py-4  border-2 border-[#485887] rounded-xl col-span-1 sm:col-span-2 lg:col-span-1"
+                    href="tel:380631903689"
+                >
+                    <div className="flex items-center gap-2.5">
                         <div>
                             <IconPhone/>
                         </div>
                         <p>+38 063 190 3689</p>
-                    </a>
-                </div>
+                    </div>
+                </a>
             </div>
         </div>
     );

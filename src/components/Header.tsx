@@ -56,7 +56,7 @@ export const Header = () => {
                     </div>
                 </Link>
                 <div
-                    className={`fixed z-10 top-[80px] left-0 w-full h-screen text-3xl md:text-xl flex flex-col items-end gap-6 text-white bg-[#485887] transition-left duration-300 px-5 py-5 md:px-0 md:static md:w-auto md:h-auto md:flex-row
+                    className={`fixed z-20 top-[80px] left-0 w-full h-screen text-3xl md:text-xl flex flex-col items-end gap-6 text-white bg-[#485887] transition-left duration-300 px-5 py-5 md:px-0 md:static md:w-auto md:h-auto md:flex-row
                     ${isMenuOpen ? 'left-0' : 'left-full'}`}
                     onClick={handleMenuClick}
                 >

@@ -8,7 +8,10 @@ import {raleway} from "@/fonts/fonts";
 export const metadata: Metadata = {
   title: "Паб Бекон",
   description: "Паб Бекон | Варимо власне пиво. Паб із найсмачнішою їжею на районі. Львів, вулиця Наукова, 30",
-    icons: "/favicon.ico",
+  icons: "/favicon.ico",
+    other: {
+        "google-site-verification": "LYpGEUF8rImGMGNbue1NxMA9CDX2RG3LEqUD7WhiOHs",
+    },
 };
 
 export default function RootLayout({

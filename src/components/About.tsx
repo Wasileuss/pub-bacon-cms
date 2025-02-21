@@ -28,9 +28,18 @@ export default async function About () {
                                     />
                                 </div>
                             )}
-                            <div className="flex flex-col basis-1/2 grow">
-                                <p>
+                            <div className="flex flex-col gap-2.5 basis-1/2 grow">
+                                <p className="text-xl font-semibold">
                                     {item.desc}
+                                </p>
+                                <p className="text-xl font-semibold">
+                                    {item.info1}
+                                </p>
+                                <p className="text-xl font-semibold">
+                                    {item.info2}
+                                </p>
+                                <p className="text-xl font-semibold">
+                                    {item.info3}
                                 </p>
                             </div>
                         </div>

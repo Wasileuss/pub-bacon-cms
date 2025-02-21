@@ -6,28 +6,26 @@ import Navigation from "@/components/Navigation";
 export const Footer = () => {
     return (
         <footer className="w-full border-t-2 bg-[#485887] text-white flex-none">
-            <div className="w-full max-w-[1440px] mx-auto px-5 py-5 grid grid-cols-3 border-b border-[#f7f7f7]">
-                <Link href="/" className="w-full justify-items-start self-center">
-                    <h1 className="bg-[#f7f7f7] text-3xl font-bold text-[#485887] px-1 rounded">Бекон</h1>
-                    <p className="text-[#f7f7f7]">гастропаб</p>
+            <div className="w-full max-w-[1440px] mx-auto p-5 flex flex-row items-center justify-between border-b border-[#f7f7f7]">
+                <Link href="/" className="w-full flex flex-col">
+                    <h1 className="w-fit bg-[#f7f7f7] text-4xl font-bold text-[#485887] px-1 rounded">Бекон</h1>
+                    <p className="text-xl text-[#f7f7f7]">гастропаб</p>
                 </Link>
-                <div className="w-full grid grid-cols-1 sm:grid-cols-2 gap-5 justify-items-center sm:place-items-center">
+                <div className="w-full flex flex-col sm:flex-row items-center justify-center gap-5">
                     <a
-                        className="w-full justify-items-center sm:justify-items-end self-center"
                         href="https://www.instagram.com/pub_bacon/"
                         target="_blank"
                     >
-                        <IconInstagram/>
+                        <IconInstagram className="w-10 h-10"/>
                     </a>
                     <a
-                        className="w-full justify-items-center self-center sm:justify-items-start sm:place-items-center"
                         href="https://www.facebook.com/p/БЕКОН-Паб-біля-дому-100076000542335"
                         target="_blank"
                     >
-                        <IconFacebook/>
+                        <IconFacebook className="w-10 h-10"/>
                     </a>
                 </div>
-                <div className="w-full justify-items-end self-center text-xl">
+                <div className="w-full flex flex-row items-center justify-end text-2xl">
                     <Navigation to={""} />
                 </div>
             </div>

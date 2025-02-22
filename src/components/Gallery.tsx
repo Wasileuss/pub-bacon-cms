@@ -3,7 +3,7 @@ import GallerySlider from "@/components/GallerySlider";
 
 export default async function Gallery() {
     const category = "gallery";
-    const galleryItems = await fetchData(category);
+    const galleryItems: Item[] = await fetchData(category);
 
     return (
         <>
@@ -16,7 +16,7 @@ export default async function Gallery() {
                                 <span className="bg-[#f7f7f7] text-[#485887] px-1 rounded">Бекон</span>
                             </h2>
                         )}
-                        <GallerySlider galleryItems={galleryItems}/>
+                        <GallerySlider galleryItems={galleryItems} />
                     </div>
                 </div>
             )}

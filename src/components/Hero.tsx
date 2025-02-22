@@ -19,10 +19,7 @@ export default async function Hero () {
                     </div>
                 </div>
             </div>
-            <HeroSlider
-                slides={heroItems}
-                imgStyle={{width: "100%", maxHeight: "100vh", minHeight: "100vh", objectFit: "cover", objectPosition: "center"}}
-            />
+            <HeroSlider heroItems={heroItems} />
         </div>
     );
 }

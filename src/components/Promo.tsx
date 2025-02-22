@@ -7,10 +7,7 @@ export default async function Promo () {
     return (
         <div className="w-full bg-[#485887]">
             <div className="w-full max-w-[1440px] mx-auto flex flex-col items-center py-2.5 px-2.5">
-                <PromoSlider
-                    slides={promoItems}
-                    imgStyle={{borderRadius: "20px", width: "100%", height: "300px", objectFit: "cover", position: "relative"}}
-                />
+                <PromoSlider promoItems={promoItems} />
             </div>
         </div>
     );

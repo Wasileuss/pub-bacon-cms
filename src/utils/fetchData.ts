@@ -1,20 +1,11 @@
 import { getItems } from "@/server/getData.server";
 
-interface DataItem {
-    id: string;
-    imgUrl: string;
-    title: string;
-    categoryName: string;
-    timestamp?: { seconds: number };
-    lastEdited?: { seconds: number };
-}
-
-export async function fetchData(category: string): Promise<DataItem[]> {
+export async function fetchData(category: string): Promise<Item[]> {
     const [data] = await Promise.all([
         getItems(category),
     ]);
 
-    return data.map((item: DataItem) => ({
+    return data.map((item: Item) => ({
         ...item,
         timestamp: item.timestamp?.seconds ? { seconds: item.timestamp.seconds } : undefined,
         lastEdited: item.lastEdited?.seconds ? { seconds: item.lastEdited.seconds } : undefined,

@@ -27,14 +27,14 @@ export default function Navigation({}: ScrollLinkProps) {
         <nav className="flex">
             <ul className="flex flex-col items-end flex-wrap gap-4 text-white font-semibold md:flex-row">
                 <li>
-                    <Link href="/" className={isHome ? "text-[#00f2b5]" : ""}>Головна</Link>
+                    <Link href="/" className={isHome ? "text-active" : ""}>Головна</Link>
                 </li>
                 <li>
-                    <Link href="/menu" className={pathname === "/menu" ? "text-[#00f2b5]" : ""}>Меню</Link>
+                    <Link href="/menu" className={pathname === "/menu" ? "text-active" : ""}>Меню</Link>
                 </li>
                 {user && (
                     <li>
-                        <Link href="/admin" className={pathname === "/admin" ? "text-[#00f2b5]" : ""}>Адмін</Link>
+                        <Link href="/admin" className={pathname === "/admin" ? "text-active" : ""}>Адмін</Link>
                     </li>
                 )}
             </ul>

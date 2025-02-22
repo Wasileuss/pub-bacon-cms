@@ -16,9 +16,8 @@ interface Item {
     timestamp?: { seconds: number };
     lastEdited?: { seconds: number };
     publicId?: string;
-    imgStyle?: React.CSSProperties;
     expanded?: boolean;
-    children?: Item[];
-    items?: Item[];
+    // children?: Item[];
+    // items?: Item[];
     user?: string;
 }

@@ -23,6 +23,7 @@
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "react-icons": "^5.5.0",
+    "react-read-more-less": "^0.1.6",
     "react-scroll": "^1.9.2",
     "uuid": "^11.0.5"
   },

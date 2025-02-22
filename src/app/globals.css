@@ -37,3 +37,15 @@ body {
 .splide__arrow.splide__arrow--next {
   @apply right-2.5 bottom-0 top-auto;
 }
+
+.readMoreText .read-more-btn {
+  @apply text-active font-bold underline cursor-pointer;
+}
+
+.readMoreText .read-less-btn {
+  @apply text-accent font-bold underline cursor-pointer;
+}
+
+.short-text {
+  @apply text-center;
+}

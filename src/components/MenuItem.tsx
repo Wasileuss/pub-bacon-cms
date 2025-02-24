@@ -2,15 +2,6 @@ import {capitalize} from "@/utils/capitalize";
 import Image from "next/image";
 import Button from "./ui/Button";
 
-interface MenuItemProps {
-    data: Item[];
-    selectedCategory: string;
-    expandedItem: string | null;
-    toggleAccordion: (id: string) => void;
-    handleEdit: (id: string) => void;
-    handleDelete: (id: string, publicId?: string) => void;
-}
-
 export const MenuItem: React.FC<MenuItemProps> = ({
       data,
       expandedItem,
@@ -32,7 +23,7 @@ export const MenuItem: React.FC<MenuItemProps> = ({
                         No. {item.num} <strong>{capitalize(item.categoryName)}:</strong> {item.title}
                     </h2>
                     <div
-                        className={`transition-[max-height] duration-300 ease-in-out overflow-hidden flex flex-col gap-2 ${expandedItem === item.id ? "max-h-[500px] py-2" : "max-h-0"}`}
+                        className={`transition-[max-height] duration-300 ease-in-out overflow-y-auto flex flex-col gap-2 ${expandedItem === item.id ? "max-h-[80vh] py-2" : "max-h-0"}`}
                     >
                         <div>
                             <p><strong>Назва*: </strong>{item.title}</p>

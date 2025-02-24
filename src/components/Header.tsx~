@@ -67,7 +67,7 @@ export const Header = () => {
                     )}
                     onClick={handleMenuClick}
                 >
-                    <Navigation to="/" />
+                    <Navigation to={""} />
                 </div>
                 <button
                     type="button"

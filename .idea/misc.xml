@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ProjectResources">
+    <resource url="http://www.google.com/schemas/sitemap-image/1.1/sitemap.xsd" location="$PROJECT_DIR$" />
+    <resource url="http://www.google.com/schemas/sitemap-mobile/1.0/sitemap.xsd" location="$PROJECT_DIR$" />
+    <resource url="http://www.google.com/schemas/sitemap-news/0.9/sitemap.xsd" location="$PROJECT_DIR$" />
+    <resource url="http://www.google.com/schemas/sitemap-video/1.1/sitemap.xsd" location="$PROJECT_DIR$" />
+    <resource url="http://www.w3.org/1999/xhtml" location="$PROJECT_DIR$" />
     <resource url="https://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" location="$PROJECT_DIR$" />
   </component>
 </project>

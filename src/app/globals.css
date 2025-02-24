@@ -6,6 +6,7 @@
   --background: #ffffff;
   --foreground: #171717;
   --main: #485887;
+  --darkAccent: #e76f51;
   --secondary: #f7f7f7;
   --accent: #bdbdd3;
 }
@@ -38,14 +39,6 @@ body {
   @apply right-2.5 bottom-0 top-auto;
 }
 
-.readMoreText .read-more-btn {
-  @apply text-active font-bold underline cursor-pointer;
-}
-
-.readMoreText .read-less-btn {
-  @apply text-accent font-bold underline cursor-pointer;
-}
-
 .short-text {
-  @apply text-center;
+  @apply flex flex-col items-center text-center;
 }

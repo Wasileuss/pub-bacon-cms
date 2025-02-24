@@ -26,6 +26,7 @@ export default {
         darkInfo: "#2980b9",
         lightInfo: "#3498db",
         active: "#00f2b5",
+        darkActive: "#00d28e",
         error: "#e74c3c",
         warning: "#f1c40f",
       },

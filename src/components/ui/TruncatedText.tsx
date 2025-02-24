@@ -11,9 +11,9 @@ export default function TruncatedText({ text, className }: TextProps) {
     return (
         <ReadMoreLess
             className={clsx("text-white text-center", className)}
-            charLimit={200}
-            readMoreText={<><span>{" "}</span><span className="read-more-btn">Читати далі</span></>}
-            readLessText={<><span>{" "}</span><span className="read-less-btn">Сховати</span></>}
+            charLimit={220}
+            readMoreText={<span className="text-active font-bold cursor-pointer">Читати далі</span>}
+            readLessText={<span className="text-accent font-bold cursor-pointer">Сховати</span>}
         >
             {text}
         </ReadMoreLess>

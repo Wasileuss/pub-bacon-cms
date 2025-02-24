@@ -275,6 +275,7 @@ const AddItems: React.FC = () => {
                         setTitle={setTitle}
                         categoryName={categoryName}
                         setCategoryName={setCategoryName}
+                        selectedCategory={selectedCategory}
                         num={num}
                         setNum={setNum}
                         link={link}

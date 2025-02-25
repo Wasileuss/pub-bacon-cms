@@ -22,21 +22,23 @@ export default function HeroSlider({ heroItems }: HeroSliderProps) {
         >
             {heroItems.map((slide) => (
                 <SplideSlide key={slide.id} className="relative overflow-hidden h-auto">
-                    <Image
-                        src={slide.imgUrl}
-                        alt={slide.title || "Головне зображення сайту"}
-                        width={400}
-                        height={300}
-                        style={{
-                            position: "relative",
-                            width: "100%",
-                            maxHeight: "100vh",
-                            minHeight: "100vh",
-                            objectFit: "cover",
-                            objectPosition: "center"
-                        }}
-                        priority={true}
-                    />
+                    {slide.imgUrl && (
+                        <Image
+                            src={slide.imgUrl}
+                            alt={slide.title || "Головне зображення сайту"}
+                            width={400}
+                            height={300}
+                            style={{
+                                position: "relative",
+                                width: "100%",
+                                maxHeight: "100vh",
+                                minHeight: "100vh",
+                                objectFit: "cover",
+                                objectPosition: "center"
+                            }}
+                            priority={true}
+                        />
+                    )}
                 </SplideSlide>
             ))}
         </Slider>

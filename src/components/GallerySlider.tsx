@@ -29,15 +29,17 @@ export default function GallerySlider({ galleryItems }: GallerySliderProps) {
         >
             {galleryItems.map((item) => (
                 <SplideSlide key={item.id}>
-                    <Image
-                        src={item.imgUrl}
-                        alt={item.title || "Фотогалерея 'Бекон'"}
-                        width={400}
-                        height={300}
-                        style={{ width: "100%", height: "100%", objectFit: "cover" }}
-                        priority={false}
-                        loading={"lazy"}
-                    />
+                    {item.imgUrl && (
+                        <Image
+                            src={item.imgUrl}
+                            alt={item.title || "Фотогалерея 'Бекон'"}
+                            width={400}
+                            height={300}
+                            style={{ width: "100%", height: "100%", objectFit: "cover" }}
+                            priority={false}
+                            loading={"lazy"}
+                        />
+                    )}
                 </SplideSlide>
             ))}
         </Slider>

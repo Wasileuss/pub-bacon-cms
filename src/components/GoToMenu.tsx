@@ -7,7 +7,7 @@ const GoToMenu = () => {
             <div className="flex mb-10 w-full max-w-[1440px] mx-auto px-2.5 sm:px-5">
                 <Link
                     href="/menu"
-                    className="menu-button w-full text-3xl md:text-4xl lg:text-5xl font-bold uppercase text-center text-primary bg-active transition duration-300 ease-in-out hover:bg-darkActive hover:text-white rounded"
+                    className="menu-button w-full text-3xl md:text-4xl lg:text-5xl font-bold uppercase text-center text-primary bg-active transform transition duration-300 ease-in-out hover:bg-darkActive hover:text-white hover:scale-[1.01] hover:translate-y-[-5px] rounded"
                 >
                     <RotatingText
                         texts={['Перейти в меню', 'Авторська кухня', 'Крафтове пиво', 'Ласкаво просимо!']}

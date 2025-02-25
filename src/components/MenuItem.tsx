@@ -35,14 +35,13 @@ export const MenuItem: React.FC<MenuItemProps> = ({
                             {item.imgUrl &&
                               <div className="w-32 h-auto mb-4 overflow-hidden">
                                 <Image
-                                  className="w-full h-full object-cover"
+                                  className="w-full h-auto object-cover"
                                   width={300}
                                   height={200}
-                                  style={{width: "auto", height: "auto"}}
+                                  style={{width: "100%", height: "auto"}}
                                   priority={true}
-                                  loading={"eager"}
                                   src={item.imgUrl}
-                                  alt="img"
+                                  alt="Image to DB"
                                 />
                               </div>
                             }

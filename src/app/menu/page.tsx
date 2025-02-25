@@ -28,7 +28,7 @@ export default async function Menu() {
     };
 
     return (
-        <div id="menu" className="w-full max-w-[1440px] mx-auto flex flex-col items-center py-10 px-5">
+        <div id="menu" className="w-full max-w-[1440px] mx-auto flex flex-col items-center py-10 px-2.5 md:px-5">
             <h2 className="text-3xl font-bold mb-5 sm:text-4xl">
                 Меню <span className="bg-[#485887] text-[#f7f7f7] px-1 rounded">Bacon</span> Pub
             </h2>

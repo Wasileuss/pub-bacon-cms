@@ -13,8 +13,8 @@ export default async function Hero () {
     return (
         <div className="w-screen h-screen min-h-fit relative">
             <div className="absolute z-10 top-0 left-0 w-full h-full">
-                <div className="w-full h-full max-w-[1440px] mx-auto flex flex-col items-end justify-between gap-5 px-10 py-10 md:pt-20">
-                    <div className="w-full flex flex-col justify-start gap-5 md:flex-row md:justify-between">
+                <div className="w-full h-full max-w-[1440px] mx-auto flex flex-col items-end justify-between gap-5 px-5 py-5 sm:px-10 sm:py-10 md:pt-20">
+                    <div className="w-full h-full flex flex-col gap-5 pb-12 justify-between md:flex-row">
                         <h1 className="flex flex-col lg:flex-row gap-5 text-5xl sm:text-6xl text-[#f7f7f7] font-bold">
                         <span className="h-fit w-fit text-6xl md:text-7xl font-bold overflow-hidden rounded">
                             <SplitText
@@ -53,7 +53,7 @@ export default async function Hero () {
                             threshold={0.2}
                         >
                             <div
-                                className="flex flex-col w-fit h-fit text-2xl text-[#f7f7f7] bg-white/20 rounded-[16px] shadow-lg shadow-black/10 backdrop-blur-[6.9px] p-6">
+                                className="flex flex-col w-fit h-fit text-2xl text-[#f7f7f7] bg-white/20 rounded-[16px] shadow-lg shadow-black/10 backdrop-blur-[6.9px] p-5">
                                 <p>не спробуєш -</p>
                                 <p>не дізнаєшся</p>
                                 <p>[*як це смачно!]</p>
@@ -61,7 +61,7 @@ export default async function Hero () {
                         </AnimatedContent>
                     </div>
                     <a
-                        className="absolute bottom-20 right-7 md:right-12 lg:right-20 z-0"
+                        className="absolute bottom-20 right-4 sm:right-7 md:right-12 lg:right-20 z-0"
                         href={contactsItems[1].link}
                     >
                         <CircularText

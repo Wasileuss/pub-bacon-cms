@@ -37,6 +37,9 @@ export default function HeroSlider({ heroItems }: HeroSliderProps) {
                                 objectPosition: "center"
                             }}
                             priority={true}
+                            loading={'eager'}
+                            placeholder="blur"
+                            blurDataURL="data:image/png;base64,..."
                         />
                     )}
                 </SplideSlide>

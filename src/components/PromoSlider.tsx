@@ -11,6 +11,7 @@ interface PromoSliderProps {
 }
 
 export default function PromoSlider({ promoItems }: PromoSliderProps) {
+    if (!promoItems || promoItems.length === 0) return null;
     return (
         <Slider
             options={{
